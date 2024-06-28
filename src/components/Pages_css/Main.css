@@ -1,0 +1,47 @@
+.main{
+    height: 325px;
+    width: 100%;
+}
+.text{
+    padding-top: 6.5rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.social{
+    margin-left: 1.5rem; 
+    margin-top: .5rem;
+}
+.social a{
+    color: #fff;
+    margin-left: .4rem;
+}
+.insta:hover{
+    color: rgb(245, 26, 103);
+}
+.fb:hover{
+    color: rgb(25, 67, 204);
+}
+.lin:hover{
+    color: rgb(22, 87, 227);
+}
+.img{
+    position: absolute;
+    top: 4.5rem;
+    left: 30rem;
+}
+.img1{
+    position: absolute;
+    top: 10rem;
+    left: 36rem;
+}
+.img-side1{
+    width: 120px;
+    height: 160px;
+}.img-side2{
+    width: 130px;
+    height: 160px;
+}
+

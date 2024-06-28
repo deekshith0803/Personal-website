@@ -4,7 +4,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .app{
-    background-color: #cbb8b8;
-    height: 100%;
-    width: 100%;
+    background-color: #141414;
+    height: 100vh;
+}
+body::-webkit-scrollbar{
+    display: none;
 }

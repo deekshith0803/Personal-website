@@ -1,11 +1,12 @@
 .active{
-    background-color: #173c8e;
+    background-color: #4f4f4f;
 }
 nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f1728;
+    background: #000000 ;
     position: sticky;
     top: 0;
 }
@@ -14,7 +15,7 @@ nav .title{
     margin: .4rem;
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 nav ul{
     display: flex;
@@ -32,7 +33,7 @@ nav ul li a{
     border-radius: .5rem;
 }
 nav ul li a:not(.active):hover{
-    background-color: #172554;
+    background-color: #363636;
 }
 
 .icon{
