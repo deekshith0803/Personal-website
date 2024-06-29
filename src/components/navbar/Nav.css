@@ -49,9 +49,11 @@ nav ul li a:not(.active):hover{
 @media (max-width: 480px) {
     .icon{
         visibility: visible;
+        font-size: 2rem;
     }
     nav .title{
-        font-size: .8rem;
+        font-size: 1.9rem;
+        transition: 2s;
     }
     nav{
         flex-direction: column;
@@ -60,7 +62,8 @@ nav ul li a:not(.active):hover{
     nav ul{
         display: none;
         flex-direction: column;
-        width: 100%;margin-bottom: .4rem;
+        width: 100%;
+        margin-bottom: .4rem;
     }
     nav ul.open{
         display: flex;
@@ -70,6 +73,7 @@ nav ul li a:not(.active):hover{
         text-align: center;
     }
     nav ul li a{
-        margin: .2rem .5rem;
+        margin: .6rem .9rem;
+        font-size: 2rem;
     }
 }

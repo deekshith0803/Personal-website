@@ -1,5 +1,7 @@
 .main{
-    height: 325px;
+    background-image: url(../assects/pexels-rumeysa-52733166-17964667.jpg);
+    background-size: cover;
+    height: 335px;
     width: 100%;
 }
 .text{
@@ -22,10 +24,13 @@
     color: rgb(245, 26, 103);
 }
 .fb:hover{
-    color: rgb(25, 67, 204);
+    color: rgb(18, 54, 175);
 }
 .lin:hover{
-    color: rgb(22, 87, 227);
+    color: rgb(22, 92, 243);
+}
+.git:hover{
+    color: rgb(58, 58, 70);
 }
 .img{
     position: absolute;
@@ -43,5 +48,54 @@
 }.img-side2{
     width: 130px;
     height: 160px;
+}
+@media (max-width: 480px){
+    .main{
+        height: 850PX;
+        width: 100%;
+    }
+    .text{
+        padding-top: 5rem;
+        margin-left: 2rem;
+        font-size:1.3rem;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+    }
+    .text h3{
+        font-size: 1.3rem;
+        padding-top: .5rem;
+    }
+    .text h5{
+        font-size: .9rem;
+        padding-top: .5rem;
+    }.social{
+        margin-top: 1.rem;
+        margin-left: 1.3rem; 
+        font-size: 1.5rem;
+    }
+    .social a{
+        padding-left: .5rem;
+    }
+    .img{
+        width: 70px;
+        position: relative;
+        top: 3rem;
+        left: 2rem;
+    }
+    .img1{
+        width: 75px;
+        position: relative;
+        top: 1.5rem;
+        left: 11rem;
+    }
+    .img-side1{
+        width: 180px;
+        height: 240px;
+    }.img-side2{
+        width: 185px;
+        height: 240px;
+    }
+
 }
 

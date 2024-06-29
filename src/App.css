@@ -4,7 +4,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .app{
-    background-color: #141414;
     height: 100vh;
 }
 body::-webkit-scrollbar{
