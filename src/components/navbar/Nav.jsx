@@ -22,6 +22,9 @@ function Nav() {
             <NavLink to='/About' >About</NavLink>
             </li>
             <li>
+            <NavLink to='/Works' >My Works</NavLink>
+            </li>
+            <li>
             <NavLink to='/Contact' >Contact</NavLink>
             </li>
         </ul>

@@ -41,7 +41,7 @@ nav ul li a:not(.active):hover{
     color: #fff;
     display: flex;
     position: absolute;
-    top: .35rem;
+    top: -.5rem;
     right: .9rem;
     flex-direction: column;
     justify-content: space-between;

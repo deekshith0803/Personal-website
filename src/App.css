@@ -3,9 +3,10 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.app{
-    height: 100vh;
-}
-body::-webkit-scrollbar{
+*::-webkit-scrollbar{
     display: none;
+}
+body{
+    width: 100%;
+    background-color: #111;
 }

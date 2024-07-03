@@ -4,9 +4,34 @@ import { FaLocationDot, FaRegMessage } from 'react-icons/fa6'
 import '../Pages_css/Contact.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhone, FaShareAltSquare,FaGithub } from 'react-icons/fa'
 import emailjs from '@emailjs/browser';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
   const form = useRef();
+
+  const success = () => toast.success('Success', {
+    position: "bottom-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    transition: Bounce,
+    });
+    const error = () => toast.error('Error to send message', {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+      });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,12 +39,12 @@ function Contact() {
     emailjs.sendForm('service_7myygls', 'template_l4d1fc4', form.current, 'fBec-tlobfYY98oiG')
       .then(
         () => {
-          alert('Success!');
+          success()
           console.log('SUCCESS!');
         },
-        (error) => {
-          alert('Failed to send email.');
-          console.log('FAILED...', error.text);
+        (e) => {
+          error()
+          console.log('FAILED...', e.text);
         },
       );
   };
@@ -71,8 +96,9 @@ function Contact() {
         <br />
         <textarea name='message' required className='textarea' placeholder='Message'></textarea>
         <br />
-        <button>Send</button>
-      </form>
+        <button className='btn-send1' type='submit'>Send</button>
+      </form> 
+      <ToastContainer />
     </div>
   )
 }
